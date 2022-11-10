@@ -1,0 +1,12 @@
+.info > *:hover button{
+   display: inline;
+}
+.info>* > h2 {
+    display: flex;
+    justify-content: space-between;
+}
+.infoGeneral>h1{
+    display: flex;
+    justify-content: space-between;
+}
+    
