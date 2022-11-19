@@ -21,7 +21,7 @@ const InfoGeneral = () => {
 
   return (
     <div className='infoGeneral'>
-      <h1> First-Name  Last-Name <button id='education' ref={ref}>EDIT</button></h1>
+      <h1> First-Name  Last-Name <button className='edit' id='education' ref={ref}>EDIT</button></h1>
       <h3> Role</h3>
       <p>Mir1im ver1ian1,quis r1oJtr exercitatiol ullalnco lalIoriJliJi ut
          aliquip ex e comlno doconseuat. Duis aute irure dolor ir

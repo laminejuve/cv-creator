@@ -20,7 +20,7 @@ const Awards = () => {
 
   return (
     <div>
-        <h2>AWARDS <button id='awards'ref={ref}>EDIT </button></h2>
+        <h2>AWARDS <button className='edit' id='awards'ref={ref}>EDIT </button></h2>
     </div>
   )
 }

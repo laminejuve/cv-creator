@@ -14,7 +14,7 @@
     
 }
 .contactsSec {
-    height: 17%;
+    height: 20%;
     width: 80%;
     text-align: start;
     font-size: smaller;
@@ -26,9 +26,12 @@
     display: flex;
     justify-content: space-between;
 }
-button {
+.edit {
     display: none;
 }
 .contactsSec:hover button{
     display: inline;
+}
+#add-app{
+    background-color: #fef6e4;
 }

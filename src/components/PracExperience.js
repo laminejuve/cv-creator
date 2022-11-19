@@ -20,7 +20,7 @@ const PracExperience = () => {
 
   return (
     <div>
-        <h2>WORKS EXPERIENCE <button id='experience'ref={ref}  >EDIT </button></h2>
+        <h2>WORKS EXPERIENCE <button className='edit' id='experience'ref={ref}  >EDIT </button></h2>
     </div>
   )
 }
