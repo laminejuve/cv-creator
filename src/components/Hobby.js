@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaStar, FaWindowClose } from "react-icons/fa";
+import { FaWindowClose } from "react-icons/fa";
 import "../styles/modal.css";
 
 let hobbies = [];
@@ -12,7 +12,6 @@ const Hobby = () => {
       ...form,
       [event.target.id]: event.target.value,
     });
-    console.log(form.hobby);
   };
 
   const handleSubmit = (event) => {

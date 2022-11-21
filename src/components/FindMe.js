@@ -23,7 +23,6 @@ const FindMe = () => {
       [event.target.id]: event.target.value,
     });
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setForm({
@@ -55,22 +54,30 @@ const FindMe = () => {
           EDIT
         </button>
       </h1>
-      <p>
-        {" "}
-        <FaFacebook /> &nbsp; {INITIAL_STATE.facebook}{" "}
-      </p>
-      <p>
-        {" "}
-        <FaTwitter /> &nbsp; {INITIAL_STATE.twitter}{" "}
-      </p>
-      <p>
-        {" "}
-        <FaLinkedin /> &nbsp; {INITIAL_STATE.linkedin}
-      </p>
-      <p>
-        {" "}
-        <FaGithub /> &nbsp; {INITIAL_STATE.github}
-      </p>
+      {INITIAL_STATE.facebook !== "" && (
+        <p>
+          {" "}
+          <FaFacebook /> &nbsp; {INITIAL_STATE.facebook}{" "}
+        </p>
+      )}
+      {INITIAL_STATE.twitter !== "" && (
+        <p>
+          {" "}
+          <FaTwitter /> &nbsp; {INITIAL_STATE.twitter}{" "}
+        </p>
+      )}
+      {INITIAL_STATE.linkedin !== "" && (
+        <p>
+          {" "}
+          <FaLinkedin /> &nbsp; {INITIAL_STATE.linkedin}
+        </p>
+      )}
+      {INITIAL_STATE.github !== "" && (
+        <p>
+          {" "}
+          <FaGithub /> &nbsp; {INITIAL_STATE.github}
+        </p>
+      )}
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
